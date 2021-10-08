@@ -1,0 +1,1492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>suoglu.github.io</spirit:vendor>
+  <spirit:library>suoglu</spirit:library>
+  <spirit:name>basys3_gpio</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>S_AXI</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm_rtl" spirit:version="1.0"/>
+      <spirit:slave>
+        <spirit:memoryMapRef spirit:memoryMapRef="S_AXI"/>
+      </spirit:slave>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axi_awaddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axi_awprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axi_awvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axi_awready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axi_wdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WSTRB</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axi_wstrb</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axi_wvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axi_wready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axi_bresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axi_bvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axi_bready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axi_araddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axi_arprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axi_arvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axi_arready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axi_rdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axi_rresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axi_rvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axi_rready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>WIZ_DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S_AXI.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>WIZ_NUM_REG</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S_AXI.WIZ_NUM_REG" spirit:minimum="4" spirit:maximum="512" spirit:rangeType="long">9</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>SUPPORTS_NARROW_BURST</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S_AXI.SUPPORTS_NARROW_BURST" spirit:choiceRef="choice_pairs_ce1226b1">0</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S_AXI_RST</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axi_aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXI_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S_AXI_CLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s_axi_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXI_CLK.ASSOCIATED_BUSIF">S_AXI</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXI_CLK.ASSOCIATED_RESET">s_axi_aresetn</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:memoryMaps>
+    <spirit:memoryMap>
+      <spirit:name>S_AXI</spirit:name>
+      <spirit:addressBlock>
+        <spirit:name>S_AXI_reg</spirit:name>
+        <spirit:baseAddress spirit:format="long" spirit:resolve="user">0</spirit:baseAddress>
+        <spirit:range spirit:format="long">4096</spirit:range>
+        <spirit:width spirit:format="long">32</spirit:width>
+        <spirit:usage>register</spirit:usage>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>OFFSET_BASE_PARAM</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S_AXI.S_AXI_REG.OFFSET_BASE_PARAM">C_S_AXI_BASEADDR</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>OFFSET_HIGH_PARAM</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S_AXI.S_AXI_REG.OFFSET_HIGH_PARAM">C_S_AXI_HIGHADDR</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>OFFSET_CONFIG</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S_AXI.S_AXI_REG.OFFSET_CONFIG">OFFSET_CONFIG</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>OFFSET_LED</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S_AXI.S_AXI_REG.OFFSET_LED">OFFSET_LED</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>OFFSET_SW</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S_AXI.S_AXI_REG.OFFSET_SW">OFFSET_SW</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>OFFSET_SSD</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S_AXI.S_AXI_REG.OFFSET_SSD">OFFSET_SSD</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>OFFSET_BTN_ALL</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S_AXI.S_AXI_REG.OFFSET_BTN_ALL">OFFSET_BTN_ALL</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>OFFSET_BTNL</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S_AXI.S_AXI_REG.OFFSET_BTNL">OFFSET_BTNL</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>OFFSET_BTNR</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S_AXI.S_AXI_REG.OFFSET_BTNR">OFFSET_BTNR</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>OFFSET_BTNU</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S_AXI.S_AXI_REG.OFFSET_BTNU">OFFSET_BTNU</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>OFFSET_BTND</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S_AXI.S_AXI_REG.OFFSET_BTND">OFFSET_BTND</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:addressBlock>
+    </spirit:memoryMap>
+  </spirit:memoryMaps>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesis</spirit:name>
+        <spirit:displayName>Verilog Synthesis</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>basys3_gpio_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>ab8d5433</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogbehavioralsimulation</spirit:name>
+        <spirit:displayName>Verilog Simulation</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>basys3_gpio_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogbehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>ab8d5433</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_softwaredriver</spirit:name>
+        <spirit:displayName>Software Driver</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:sw.driver</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_softwaredriver_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>3df805e1</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>9d397824</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>bd_tcl</spirit:name>
+        <spirit:displayName>Block Diagram</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:block.diagram</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>bd_tcl_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>45a2f450</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_testbench</spirit:name>
+        <spirit:displayName>Test Bench</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation.testbench</spirit:envIdentifier>
+        <spirit:modelName>tb</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_testbench_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>8946d6ac</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>s_axi_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axi_aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axi_awaddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AXI_ADDR_WIDTH&apos;)) - 1)">5</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axi_awprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axi_awvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axi_awready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axi_wdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axi_wstrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AXI_DATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axi_wvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axi_wready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axi_bresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axi_bvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axi_bready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axi_araddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AXI_ADDR_WIDTH&apos;)) - 1)">5</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axi_arprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axi_arvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axi_arready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axi_rdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axi_rresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axi_rvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s_axi_rready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sw</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>btnR</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>btnL</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>btnU</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>btnD</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>an</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>seg</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">6</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>led</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>reg</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>C_S_AXI_DATA_WIDTH</spirit:name>
+        <spirit:displayName>C S AXI DATA WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXI data bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_AXI_DATA_WIDTH" spirit:order="3" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S_AXI_ADDR_WIDTH</spirit:name>
+        <spirit:displayName>C S AXI ADDR WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXI address bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_AXI_ADDR_WIDTH" spirit:order="4" spirit:rangeType="long">6</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>BTN_COUNTER_SIZE</spirit:name>
+        <spirit:displayName>Btn Counter Size</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BTN_COUNTER_SIZE">16</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>AXI_CLK_PERIOD</spirit:name>
+        <spirit:displayName>Axi Clk Period</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXI_CLK_PERIOD">10</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>OFFSET_CONFIG</spirit:name>
+        <spirit:displayName>Offset Config</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.OFFSET_CONFIG" spirit:bitStringLength="8">0x00</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>OFFSET_LED</spirit:name>
+        <spirit:displayName>Offset Led</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.OFFSET_LED" spirit:bitStringLength="8">0x04</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>OFFSET_SW</spirit:name>
+        <spirit:displayName>Offset Sw</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.OFFSET_SW" spirit:bitStringLength="8">0x08</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>OFFSET_SSD</spirit:name>
+        <spirit:displayName>Offset Ssd</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.OFFSET_SSD" spirit:bitStringLength="8">0x0C</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>OFFSET_BTN_ALL</spirit:name>
+        <spirit:displayName>Offset Btn All</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.OFFSET_BTN_ALL" spirit:bitStringLength="8">0x10</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>OFFSET_BTNL</spirit:name>
+        <spirit:displayName>Offset Btnl</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.OFFSET_BTNL" spirit:bitStringLength="8">0x14</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>OFFSET_BTNU</spirit:name>
+        <spirit:displayName>Offset Btnu</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.OFFSET_BTNU" spirit:bitStringLength="8">0x18</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>OFFSET_BTNR</spirit:name>
+        <spirit:displayName>Offset Btnr</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.OFFSET_BTNR" spirit:bitStringLength="8">0x1C</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>OFFSET_BTND</spirit:name>
+        <spirit:displayName>Offset Btnd</spirit:displayName>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.OFFSET_BTND" spirit:bitStringLength="8">0x20</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S_AXI_BASEADDR</spirit:name>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_AXI_BASEADDR" spirit:bitStringLength="32">0xFFFFFFFF</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S_AXI_HIGHADDR</spirit:name>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_AXI_HIGHADDR" spirit:bitStringLength="32">0x00000000</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_447a18cc</spirit:name>
+      <spirit:enumeration>0x00</spirit:enumeration>
+      <spirit:enumeration>0x04</spirit:enumeration>
+      <spirit:enumeration>0x08</spirit:enumeration>
+      <spirit:enumeration>0x0C</spirit:enumeration>
+      <spirit:enumeration>0x10</spirit:enumeration>
+      <spirit:enumeration>0x14</spirit:enumeration>
+      <spirit:enumeration>0x18</spirit:enumeration>
+      <spirit:enumeration>0x1C</spirit:enumeration>
+      <spirit:enumeration>0x20</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_6fc15197</spirit:name>
+      <spirit:enumeration>32</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_ce1226b1</spirit:name>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/btn_debouncer.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/ssd_util.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/basys3_gpio_v1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_96608cd8</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/btn_debouncer.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/ssd_util.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/basys3_gpio_v1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_softwaredriver_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>drivers/basys3_gpio_v1_0/src/basys3_gpio.cpp</spirit:name>
+        <spirit:fileType>cppSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/basys3_gpio_v1_0/src/basys3_gpio.h</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/basys3_gpio_v1_0/data/basys3_gpio.mdd</spirit:name>
+        <spirit:userFileType>mdd</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/basys3_gpio_v1_0/data/basys3_gpio.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/basys3_gpio_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_9d397824</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>bd_tcl_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>bd/bd.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_testbench_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/basys3_gpio_tb.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_testbench</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>sim/tb_behav.wcfg</spirit:name>
+        <spirit:fileType>unknown</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_testbench</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>AXI-lite interface for GPIO of Basys 3</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>C_S_AXI_DATA_WIDTH</spirit:name>
+      <spirit:displayName>AXI Data Width</spirit:displayName>
+      <spirit:description>Width of S_AXI data bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S_AXI_DATA_WIDTH" spirit:order="3">32</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S_AXI_DATA_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S_AXI_ADDR_WIDTH</spirit:name>
+      <spirit:displayName>AXI Address Width</spirit:displayName>
+      <spirit:description>Width of S_AXI address bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S_AXI_ADDR_WIDTH" spirit:order="4" spirit:minimum="0" spirit:maximum="32" spirit:rangeType="long">6</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S_AXI_ADDR_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S_AXI_BASEADDR</spirit:name>
+      <spirit:displayName>AXI Base Address</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S_AXI_BASEADDR" spirit:order="5" spirit:bitStringLength="32">0xFFFFFFFF</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S_AXI_BASEADDR">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S_AXI_HIGHADDR</spirit:name>
+      <spirit:displayName>AXI High Address</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S_AXI_HIGHADDR" spirit:order="6" spirit:bitStringLength="32">0x00000000</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S_AXI_HIGHADDR">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">basys3_gpio_v1_0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>BTN_COUNTER_SIZE</spirit:name>
+      <spirit:displayName>Button Counter Size</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BTN_COUNTER_SIZE" spirit:minimum="8" spirit:maximum="32" spirit:rangeType="long">16</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>AXI_CLK_PERIOD</spirit:name>
+      <spirit:displayName>Axi Clock Period (ns)</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.AXI_CLK_PERIOD">10</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_CONFIG</spirit:name>
+      <spirit:displayName>Dynamic Configuration</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_CONFIG" spirit:choiceRef="choice_list_447a18cc" spirit:bitStringLength="8">0x00</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_LED</spirit:name>
+      <spirit:displayName>LEDs</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_LED" spirit:choiceRef="choice_list_447a18cc" spirit:bitStringLength="8">0x04</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_SW</spirit:name>
+      <spirit:displayName>Switches</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_SW" spirit:choiceRef="choice_list_447a18cc" spirit:bitStringLength="8">0x08</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_SSD</spirit:name>
+      <spirit:displayName>Seven Segment Display</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_SSD" spirit:choiceRef="choice_list_447a18cc" spirit:bitStringLength="8">0x0C</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_BTN_ALL</spirit:name>
+      <spirit:displayName>Combined Button Counter</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_BTN_ALL" spirit:choiceRef="choice_list_447a18cc" spirit:bitStringLength="8">0x10</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_BTNL</spirit:name>
+      <spirit:displayName>Left Button</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_BTNL" spirit:choiceRef="choice_list_447a18cc" spirit:bitStringLength="8">0x14</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_BTNU</spirit:name>
+      <spirit:displayName>Up Button</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_BTNU" spirit:choiceRef="choice_list_447a18cc" spirit:bitStringLength="8">0x18</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_BTNR</spirit:name>
+      <spirit:displayName>Right Button</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_BTNR" spirit:choiceRef="choice_list_447a18cc" spirit:bitStringLength="8">0x1C</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>OFFSET_BTND</spirit:name>
+      <spirit:displayName>Down Button</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.OFFSET_BTND" spirit:choiceRef="choice_list_447a18cc" spirit:bitStringLength="8">0x20</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">artix7</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>Basys 3 GPIO</xilinx:displayName>
+      <xilinx:coreRevision>8</xilinx:coreRevision>
+      <xilinx:upgrades>
+        <xilinx:canUpgradeFrom>user.org:user:basys3_gpio:1.0</xilinx:canUpgradeFrom>
+      </xilinx:upgrades>
+      <xilinx:coreCreationDateTime>2021-10-08T21:05:57Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31bb3008_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bf91bc2_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@473b24e0_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62d8a973_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@690130df_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70a07837_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32dfbf0c_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28c546d3_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e44b841_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c0ba565_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@566eb3af_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54888a54_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@751d2ad3_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52e90edb_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d29c6c7_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c280ed9_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79d359e7_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26c9c5a5_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fd16847_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e652d2e_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cddf5e1_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14594769_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4347b99b_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fb43b25_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72c8db48_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73ac2507_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c600614_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f471631_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a5ee0fd_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17d2f83e_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@731746a3_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7bf1b2d4_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d1b0eae_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68a8ccea_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dc0c351_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30982c6_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@362e2647_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fd58f30_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8f11b86_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ce49003_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53a5f073_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76e4d668_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68eea9d3_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1714e368_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b87d1db_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ae348d4_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d98cf26_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d1e9366_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ddbf90b_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@146d5b5a_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7441f542_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7764f83f_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7af8f3d3_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17c5df0_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6681ad2d_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@703c29b0_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51d17ff8_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@452553ca_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@227ecf3a_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fcf59d0_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20db4f06_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14be836d_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a7daa51_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@736fc75f_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@246c1e0f_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e03d8ce_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b636ca7_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14eafce5_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f2282e_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b44213f_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bd1bc3_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b958a88_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43f929bc_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c51b324_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@742a3c4b_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e563fb4_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7509f6ad_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13905f80_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ff09340_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56ce1922_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32510817_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32cedb31_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7858e24b_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@178de69b_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d0d21ba_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@414aa5f1_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cc7b7cb_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39f52940_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35657d7d_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fef3ce2_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fb9bd45_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5aa52de5_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7eae8f99_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ed33b43_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e11afba_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23848d48_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b90ac3b_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42782a7a_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@698b844_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23fac712_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b0cfb2_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3021b494_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c51163e_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ac0e55e_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d202d78_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7164d234_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fb02d1a_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d348b94_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@115b583a_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59f2e39c_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a058d31_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f30162b_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ef4e4d1_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65e1152e_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bafe664_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@107670ef_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e5f551e_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@413bc617_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22161910_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@314bff73_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63108444_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37aebc3a_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1dc6830e_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bcda37e_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a5914c6_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b7adb43_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e25ab33_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ec09b76_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@635acdf3_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c9c2e81_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74456be8_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6af90d47_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b2cb151_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ed3c137_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34ea41ca_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46ee8ab0_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46fcf636_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a53867f_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48fada78_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14cced07_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b40d88_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56c3dea_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@228a284_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@153b4c4d_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57fea135_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@781690e3_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61280b0_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35f44de_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14d96d2f_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57d2f406_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e66d5f0_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25f3f6a0_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38607d53_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b5e7843_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c2b93cc_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c0db959_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@433cf182_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f85b682_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1209efa3_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@772e59a7_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d092b11_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c4668c_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34801319_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@383d1aab_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e17a7e9_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76813bf2_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77a27480_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28f0254c_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2109e00f_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@669c872e_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d7e8284_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f1be698_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@785ac59_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c64dfe8_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bb6b81a_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62b61012_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76e3f3f4_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52d367fe_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@434c2b04_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e453293_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f2af630_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@dc7cd11_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38952c49_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3658030f_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a4b7b8e_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ddf1e4a_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64b4363b_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e6d6665_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29ebbdd9_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49c6bf9f_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25563f2a_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@395f6605_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d7db57c_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@746734a2_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ada6cde_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58547eb_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1848bff9_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55e1fd98_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f8b602b_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b9d5c9b_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ff6c6ef_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51770325_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@131fbe57_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2abf0327_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5acd2863_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bac2920_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@644337fc_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43e69976_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ba101d2_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@218bd982_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7aeb0454_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bc6bd96_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@575322bb_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a457eb4_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f4246c6_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40992690_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48584149_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a6170a7_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fe6bd86_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c5a1f85_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b97e0cb_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@94ef6f2_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@527725fd_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2699258e_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ca50eaf_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66d66459_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@163a6109_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7030c2_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41ccb89e_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67ccc62_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fa65013_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58b0dd68_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b5724b4_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2186a3c0_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3be6ae91_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@697f845a_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f26014d_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d99ebc8_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@457067a9_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59581124_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42500d00_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@708b0695_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c560133_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fcfe869_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fc98a1_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6871270b_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21e3454c_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ddb13f9_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64f106bb_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41f89b63_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5884c5b6_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51d7d85_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d2a684a_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2aec477a_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ac999fb_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c174650_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e82cd95_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@129181ba_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a8d197f_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b7d300a_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@707cb6a2_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@688c8a8e_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41a8b875_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56c6cf11_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fdf4423_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44c44091_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d8ca5ee_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43de37b4_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57725ae9_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76d17833_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27299866_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60f3a731_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c4af841_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1053dbc0_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@196fdb0d_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@197f679a_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a9f3e34_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67c501d9_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ded0500_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d9addde_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f309ab2_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1763a8d1_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74cae8b2_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40507213_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@590da562_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@261ca3d3_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@790894bf_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a4f035f_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@723b1819_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fda01f3_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cf1bebb_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9cb59b_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69bf9ec4_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f30a432_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bd08cc8_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43ea3c4e_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@263a2778_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fadc0ed_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43464a53_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@768df771_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12e059fb_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@416712bc_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17b21f4_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6de66886_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e5ee09a_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35f85704_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a32395e_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b8c0cfb_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59c2fc1a_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14983333_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6821ed27_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20ad0481_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50c93081_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4582637d_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e7efa60_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@241af1bf_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c2b38cd_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45fe7dbf_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@640630ad_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e2fd0e_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a331e25_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@572c9dd2_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fe87e6_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cb3185d_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@582e01b3_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56d33e97_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d7f3abc_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@493fe67f_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13120bfe_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dab9880_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e4eabef_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@233e9c01_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@257261f_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63d26943_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d0e9051_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ef3383_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1449cf3b_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48cd68d3_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a5f4893_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f32b8e9_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@581fd057_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e2bd2e0_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4651e944_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2db748fd_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d504d3_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45e7873b_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b3386e5_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f00414a_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b9c99a4_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4721d378_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/basys3_gpio_1.0</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="2529dd6a"/>
+      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="31f6772d"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="111631b0"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="dfc96623"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="98323f07"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="23468c15"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

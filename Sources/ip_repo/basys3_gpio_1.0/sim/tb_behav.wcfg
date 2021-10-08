@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="25560090001fs"></ZoomEndTime>
+      <Cursor1Time time="1000741000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="360"></NameColumnWidth>
+      <ValueColumnWidth column_width="172"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="25" />
+   <wvobject type="array" fp_name="/tb/step">
+      <obj_property name="ElementShortName">step[240:0]</obj_property>
+      <obj_property name="ObjectShortName">step[240:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#800000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/nrst">
+      <obj_property name="ElementShortName">nrst</obj_property>
+      <obj_property name="ObjectShortName">nrst</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group68">
+      <obj_property name="label">AXI Write Addr</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb/s_axi_awready">
+         <obj_property name="ElementShortName">s_axi_awready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awready</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/s_axi_awvalid">
+         <obj_property name="ElementShortName">s_axi_awvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awvalid</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/s_axi_awaddr">
+         <obj_property name="ElementShortName">s_axi_awaddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_awaddr[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group69">
+      <obj_property name="label">AXI Write Data</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb/s_axi_wready">
+         <obj_property name="ElementShortName">s_axi_wready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wready</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/s_axi_wvalid">
+         <obj_property name="ElementShortName">s_axi_wvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wvalid</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/s_axi_wdata">
+         <obj_property name="ElementShortName">s_axi_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wdata[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/s_axi_wstrb">
+         <obj_property name="ElementShortName">s_axi_wstrb[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_wstrb[3:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group70">
+      <obj_property name="label">AXI Write Response</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb/s_axi_bready">
+         <obj_property name="ElementShortName">s_axi_bready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_bready</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/s_axi_bvalid">
+         <obj_property name="ElementShortName">s_axi_bvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_bvalid</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/s_axi_bresp">
+         <obj_property name="ElementShortName">s_axi_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_bresp[1:0]</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group71">
+      <obj_property name="label">AXI Read Addr</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb/s_axi_arready">
+         <obj_property name="ElementShortName">s_axi_arready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arready</obj_property>
+         <obj_property name="CustomSignalColor">#808000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/s_axi_arvalid">
+         <obj_property name="ElementShortName">s_axi_arvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_arvalid</obj_property>
+         <obj_property name="CustomSignalColor">#808000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/s_axi_araddr">
+         <obj_property name="ElementShortName">s_axi_araddr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_araddr[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#808000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group72">
+      <obj_property name="label">AXI Read Data</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb/s_axi_rvalid">
+         <obj_property name="ElementShortName">s_axi_rvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rvalid</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/s_axi_rready">
+         <obj_property name="ElementShortName">s_axi_rready</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rready</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/s_axi_rdata">
+         <obj_property name="ElementShortName">s_axi_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rdata[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/s_axi_rresp">
+         <obj_property name="ElementShortName">s_axi_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axi_rresp[1:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group67">
+      <obj_property name="label">GPIO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/tb/sw">
+         <obj_property name="ElementShortName">sw[15:0]</obj_property>
+         <obj_property name="ObjectShortName">sw[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/btnR">
+         <obj_property name="ElementShortName">btnR</obj_property>
+         <obj_property name="ObjectShortName">btnR</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/btnL">
+         <obj_property name="ElementShortName">btnL</obj_property>
+         <obj_property name="ObjectShortName">btnL</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/btnU">
+         <obj_property name="ElementShortName">btnU</obj_property>
+         <obj_property name="ObjectShortName">btnU</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/btnD">
+         <obj_property name="ElementShortName">btnD</obj_property>
+         <obj_property name="ObjectShortName">btnD</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/an">
+         <obj_property name="ElementShortName">an[3:0]</obj_property>
+         <obj_property name="ObjectShortName">an[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/seg">
+         <obj_property name="ElementShortName">seg[6:0]</obj_property>
+         <obj_property name="ObjectShortName">seg[6:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/led">
+         <obj_property name="ElementShortName">led[15:0]</obj_property>
+         <obj_property name="ObjectShortName">led[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="divider79" type="divider">
+      <obj_property name="label">UUT Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#DCDCDC</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/uut/write">
+      <obj_property name="ElementShortName">write</obj_property>
+      <obj_property name="ObjectShortName">write</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/uut/read">
+      <obj_property name="ElementShortName">read</obj_property>
+      <obj_property name="ObjectShortName">read</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group80">
+      <obj_property name="label">Write Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/tb/uut/writeSSD">
+         <obj_property name="ElementShortName">writeSSD</obj_property>
+         <obj_property name="ObjectShortName">writeSSD</obj_property>
+         <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/uut/writeLED">
+         <obj_property name="ElementShortName">writeLED</obj_property>
+         <obj_property name="ObjectShortName">writeLED</obj_property>
+         <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/uut/update_config">
+         <obj_property name="ElementShortName">update_config</obj_property>
+         <obj_property name="ObjectShortName">update_config</obj_property>
+         <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/uut/read_addr_valid">
+      <obj_property name="ElementShortName">read_addr_valid</obj_property>
+      <obj_property name="ObjectShortName">read_addr_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/uut/write_addr_valid">
+      <obj_property name="ElementShortName">write_addr_valid</obj_property>
+      <obj_property name="ObjectShortName">write_addr_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/readReg">
+      <obj_property name="ElementShortName">readReg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">readReg[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/selected_reg">
+      <obj_property name="ElementShortName">selected_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">selected_reg[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/data_to_write">
+      <obj_property name="ElementShortName">data_to_write[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_to_write[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/mask">
+      <obj_property name="ElementShortName">mask[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mask[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/ssd_digits">
+      <obj_property name="ElementShortName">ssd_digits[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ssd_digits[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/config_reg">
+      <obj_property name="ElementShortName">config_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">config_reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group98">
+      <obj_property name="label">Button Counters</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/tb/uut/btnRcounter">
+         <obj_property name="ElementShortName">btnRcounter[15:0]</obj_property>
+         <obj_property name="ObjectShortName">btnRcounter[15:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/uut/btnLcounter">
+         <obj_property name="ElementShortName">btnLcounter[15:0]</obj_property>
+         <obj_property name="ObjectShortName">btnLcounter[15:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/uut/btnUcounter">
+         <obj_property name="ElementShortName">btnUcounter[15:0]</obj_property>
+         <obj_property name="ObjectShortName">btnUcounter[15:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/uut/btnDcounter">
+         <obj_property name="ElementShortName">btnDcounter[15:0]</obj_property>
+         <obj_property name="ObjectShortName">btnDcounter[15:0]</obj_property>
+         <obj_property name="CustomSignalColor">#FFA500</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group97">
+      <obj_property name="label">Clean Buttons</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/tb/uut/btnR_clear">
+         <obj_property name="ElementShortName">btnR_clear</obj_property>
+         <obj_property name="ObjectShortName">btnR_clear</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/uut/btnL_clear">
+         <obj_property name="ElementShortName">btnL_clear</obj_property>
+         <obj_property name="ObjectShortName">btnL_clear</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/uut/btnU_clear">
+         <obj_property name="ElementShortName">btnU_clear</obj_property>
+         <obj_property name="ObjectShortName">btnU_clear</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb/uut/btnD_clear">
+         <obj_property name="ElementShortName">btnD_clear</obj_property>
+         <obj_property name="ObjectShortName">btnD_clear</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/write_address">
+      <obj_property name="ElementShortName">write_address[5:0]</obj_property>
+      <obj_property name="ObjectShortName">write_address[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/read_address">
+      <obj_property name="ElementShortName">read_address[5:0]</obj_property>
+      <obj_property name="ObjectShortName">read_address[5:0]</obj_property>
+   </wvobject>
+</wave_config>
