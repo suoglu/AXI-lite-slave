@@ -13,16 +13,9 @@
 
 #include "xparameters.h"
 
-enum BUTTON {
-  LEFT,
-  RIGHT,
-  DOWN,
-  UP
-};
 
 class basys3_gpio
-{
-private:
+{private:
   unsigned long* config = reinterpret_cast<unsigned long*>(XPAR_BASYS3_GPIO_0_S_AXI_BASEADDR + XPAR_BASYS3_GPIO_0_OFFSET_CONFIG);
   unsigned long* leds = reinterpret_cast<unsigned long*>(XPAR_BASYS3_GPIO_0_S_AXI_BASEADDR + XPAR_BASYS3_GPIO_0_OFFSET_LED);
   volatile unsigned long* switches = reinterpret_cast<unsigned long*>(XPAR_BASYS3_GPIO_0_S_AXI_BASEADDR + XPAR_BASYS3_GPIO_0_OFFSET_SW);
@@ -33,6 +26,12 @@ private:
   volatile unsigned long* btn_down = reinterpret_cast<unsigned long*>(XPAR_BASYS3_GPIO_0_S_AXI_BASEADDR + XPAR_BASYS3_GPIO_0_OFFSET_BTND);
 public:
   basys3_gpio();
+  enum BUTTON {
+    LEFT,
+    RIGHT,
+    DOWN,
+    UP
+  };
   void keepButtonVal(bool keep = true);
   void digits(bool digit3enabled = true, bool digit2enabled = true, bool digit1enabled = true, bool digit0enabled = true);
   void digits(unsigned char mask = 0xF);
