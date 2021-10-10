@@ -19,6 +19,10 @@
        2. Register Map
        3. Utilization
        4. Status Information
+3. Custom AXI4-Lite
+   1. Description
+   2. Utilization
+   3. Status Information
 
 [![Repo on GitLab](https://img.shields.io/badge/repo-GitLab-6C488A.svg)](https://gitlab.com/suoglu/axi-lite-slave)
 [![Repo on GitHub](https://img.shields.io/badge/repo-GitHub-3D76C2.svg)](https://github.com/suoglu/AXI-lite-slave)
@@ -26,8 +30,6 @@
 ---
 
 ## About
-
-!!! WORK IN PROGRESS !!!
 
 This repository contains simple AXI-Lite slaves for GPIOs of some FPGA boards as well as a generic AXI-Lite slave.
 
@@ -114,7 +116,7 @@ Gives access to the basic GPIO ports (buttons, switches and LEDs) of the [Digile
 
 In combined registers, GPIO with higher number has higher address.
 
-### Arty A7 (Synthesized)  Utilization
+### Arty A7 (Synthesized) Utilization
 
 - Slice LUTs: 912 (as Logic)
 - Slice Registers: 594 as Flip Flop and 128 as Latch
@@ -153,7 +155,7 @@ Gives access to the basic GPIO ports (buttons, switches and LEDs) of the [Digile
 - Reserved: Don't Care
 - Keep Button Values: Do not reset button counters after read.
 
-### Nexys Video (Synthesized)  Utilization
+### Nexys Video (Synthesized) Utilization
 
 - Slice LUTs: 104 (as Logic)
 - Slice Registers: 215 (as Flip Flop)
@@ -163,3 +165,27 @@ Gives access to the basic GPIO ports (buttons, switches and LEDs) of the [Digile
 **Last Simulation:** 10 October, with [Vivado Simulator](https://www.xilinx.com/products/design-tools/vivado/simulator.html).
 
 **Last Test:** 10 October 2021, on [Digilent Nexys Video](https://reference.digilentinc.com/reference/programmable-logic/nexys-video/reference-manual).
+
+## Custom AXI4-Lite Slave
+
+### Description
+
+This IP provides a simpler interface for AXI4-Lite protocol. IP handles all signalling for AXI lite interface with a simpler interface with only two channels. Both, read and write, channels use the same signals and naming convention (except a passthrough `write_strobe` signal).
+
+- `write` and `read` signals indicate a new request and kept high until `*_done` signal is set.
+- `*_done` signals indicates that the operation will be completed at the next positive edge, same as AXI protocol.
+- `*_data` signals contains the operation data.
+- `*_addrs` signals contains the address for the operation.
+- `*_error` signals indicate and error in the operation.
+- Parameter `GP_ADDR_WIDTH` is used to determine the width of `*_addrs` signals.
+
+Write and read channels work independently.
+
+### (Synthesized) Utilization on Artix 7
+
+- Slice LUTs: 22 (as Logic)
+- Slice Registers: 36 (as Flip Flop)
+
+### Status Information
+
+**Last Simulation:** 10 October, with [Vivado Simulator](https://www.xilinx.com/products/design-tools/vivado/simulator.html).
