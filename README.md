@@ -3,13 +3,18 @@
 ## Contents of Readme
 
 1. About
-2. IPs
+2. GPIO IPs
    - Basys 3 GPIO
        1. Description
        2. Register Map
        3. Utilization
        4. Status Information
    - Arty A7 GPIO
+       1. Description
+       2. Register Map
+       3. Utilization
+       4. Status Information
+   - Nexys Video GPIO
        1. Description
        2. Register Map
        3. Utilization
@@ -36,10 +41,10 @@ Gives access to the basic GPIO ports (seven segment display, buttons, switches a
 
 | Name | Default Offset | Access | Description |
 |:---:|:---:|:---:|---|
-|Config|*0x0*|R/W|Configurations for IP|
-|led|*0x4*|R/W|LEDs|
-|sw|*0x8*|R|Switches|
-|ssd|*0xC*|R/W|Seven Segment Display|
+|Config|*0x00*|R/W|Configurations for IP|
+|led|*0x04*|R/W|LEDs|
+|sw|*0x08*|R|Switches|
+|ssd|*0x0C*|R/W|Seven Segment Display|
 |btn all|*0x10*|R|Combined Button Counter|
 |btnL|*0x14*|R|Left Button Counter|
 |btnU|*0x18*|R|Up Button Counter|
@@ -83,10 +88,10 @@ Gives access to the basic GPIO ports (buttons, switches and LEDs) of the [Digile
 
 | Name | Default Offset | Access | Description |
 |:---:|:---:|:---:|---|
-|Config|*0x0*|R/W|Configurations for IP|
-|PWM led|*0x4*|R/W|Phase Width Modulated LED control|
-|Toggle led|*0x8*|R/W|Toggle LED control|
-|sw|*0xC*|R|Switches|
+|Config|*0x00*|R/W|Configurations for IP|
+|PWM led|*0x04*|R/W|Phase Width Modulated LED control|
+|Toggle led|*0x08*|R/W|Toggle LED control|
+|sw|*0x0C*|R|Switches|
 |rgb0|*0x10*|R/W|RGB LED 0|
 |rgb1|*0x14*|R/W|RGB LED 1|
 |rgb2|*0x18*|R/W|RGB LED 2|
@@ -121,3 +126,40 @@ In combined registers, GPIO with higher number has higher address.
 
 **Last Test:** 10 October 2021, on [Digilent Arty A7](https://reference.digilentinc.com/reference/programmable-logic/arty-a7/reference-manual).
 
+## Nexys Video GPIO
+
+### Nexys Video Description
+
+Gives access to the basic GPIO ports (buttons, switches and LEDs) of the [Digilent Nexys Video](https://digilent.com/reference/programmable-logic/nexys-video/start) FPGA board. Register mapping can be changed via GUI or parameters. Included driver will work regardless of the mapping.
+
+### Nexys Video Register Map
+
+| Name | Default Offset | Access | Description |
+|:---:|:---:|:---:|---|
+|Config|*0x00*|R/W|Configurations for IP|
+|led|*0x04*|R/W|LEDs|
+|sw|*0x08*|R|Switches|
+|btnC|*0x0C*|R|Center Button Counter|
+|btnD|*0x10*|R|Down Button Counter|
+|btnL|*0x14*|R|Left Button Counter|
+|btnU|*0x18*|R|Up Button Counter|
+|btnR|*0x1C*|R|Right Button Counter|
+
+**Configuration Register:**
+| 31:1 | 0 |
+|:---:|:---:|
+|Reserved|Keep Button Values|
+
+- Reserved: Don't Care
+- Keep Button Values: Do not reset button counters after read.
+
+### Nexys Video (Synthesized)  Utilization
+
+- Slice LUTs: 104 (as Logic)
+- Slice Registers: 215 (as Flip Flop)
+
+### Nexys Video Status Information
+
+**Last Simulation:** 10 October, with [Vivado Simulator](https://www.xilinx.com/products/design-tools/vivado/simulator.html).
+
+**Last Test:** 10 October 2021, on [Digilent Nexys Video](https://reference.digilentinc.com/reference/programmable-logic/nexys-video/reference-manual).
