@@ -1,0 +1,5 @@
+
+
+proc generate {drv_handle} {
+	xdefine_include_file $drv_handle "xparameters.h" "artyA7_gpio" "NUM_INSTANCES" "DEVICE_ID"  "C_S_AXI_BASEADDR" "C_S_AXI_HIGHADDR" "OFFSET_CONFIG" "OFFSET_LED_PWM" "OFFSET_LED" "OFFSET_SW" "OFFSET_RGB0" "OFFSET_RGB1" "OFFSET_RGB2" "OFFSET_RGB3" "OFFSET_BTN0" "OFFSET_BTN1" "OFFSET_BTN2" "OFFSET_BTN3" "OFFSET_BTN_ALL"
+}
