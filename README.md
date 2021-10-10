@@ -76,7 +76,7 @@ Gives access to the basic GPIO ports (seven segment display, buttons, switches a
 
 ### Basys 3 Status Information
 
-**Last Simulation:** 06 October, with [Vivado Simulator](https://www.xilinx.com/products/design-tools/vivado/simulator.html).
+**Last Simulation:** 06 October 2021, with [Vivado Simulator](https://www.xilinx.com/products/design-tools/vivado/simulator.html).
 
 **Last Test:** 09 October 2021, on [Digilent Basys 3](https://reference.digilentinc.com/reference/programmable-logic/basys-3/reference-manual).
 
@@ -124,7 +124,7 @@ In combined registers, GPIO with higher number has higher address.
 
 ### Arty A7 Status Information
 
-**Last Simulation:** 09 October, with [Vivado Simulator](https://www.xilinx.com/products/design-tools/vivado/simulator.html).
+**Last Simulation:** 09 October 2021, with [Vivado Simulator](https://www.xilinx.com/products/design-tools/vivado/simulator.html).
 
 **Last Test:** 10 October 2021, on [Digilent Arty A7](https://reference.digilentinc.com/reference/programmable-logic/arty-a7/reference-manual).
 
@@ -162,7 +162,7 @@ Gives access to the basic GPIO ports (buttons, switches and LEDs) of the [Digile
 
 ### Nexys Video Status Information
 
-**Last Simulation:** 10 October, with [Vivado Simulator](https://www.xilinx.com/products/design-tools/vivado/simulator.html).
+**Last Simulation:** 10 October 2021, with [Vivado Simulator](https://www.xilinx.com/products/design-tools/vivado/simulator.html).
 
 **Last Test:** 10 October 2021, on [Digilent Nexys Video](https://reference.digilentinc.com/reference/programmable-logic/nexys-video/reference-manual).
 
@@ -188,4 +188,4 @@ Write and read channels work independently.
 
 ### Status Information
 
-**Last Simulation:** 10 October, with [Vivado Simulator](https://www.xilinx.com/products/design-tools/vivado/simulator.html).
+**Last Simulation:** 10 October 2021, with [Vivado Simulator](https://www.xilinx.com/products/design-tools/vivado/simulator.html).
