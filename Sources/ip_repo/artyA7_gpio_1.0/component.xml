@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <spirit:vendor>suoglu.github.io</spirit:vendor>
-  <spirit:library>yigit</spirit:library>
+  <spirit:library>ip</spirit:library>
   <spirit:name>artyA7_gpio</spirit:name>
   <spirit:version>1.0</spirit:version>
   <spirit:busInterfaces>
@@ -1234,8 +1234,9 @@
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>user.org:user:artyA7_gpio:1.0</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>suoglu.github.io:suoglu:artyA7_gpio:1.0</xilinx:canUpgradeFrom>
+        <xilinx:canUpgradeFrom>suoglu.github.io:yigit:artyA7_gpio:1.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2021-10-11T20:16:01Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2021-10-11T21:30:17Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@784e1af_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/artyA7_gpio_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@4bf51909_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/artyA7_gpio_1.0</xilinx:tag>
@@ -1427,6 +1428,13 @@
         <xilinx:tag xilinx:name="ui.data.coregen.df@6bc995ea_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/artyA7_gpio_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.df@cf1f7f5_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/artyA7_gpio_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.df@424aa0a2_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/artyA7_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4e7330f6_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/artyA7_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5e40f486_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/artyA7_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ca15bb8_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/artyA7_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@32dac507_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/artyA7_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@f2625be_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/artyA7_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@46a228c8_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/artyA7_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@52b4136_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/artyA7_gpio_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>

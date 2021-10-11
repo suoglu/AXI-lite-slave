@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <spirit:vendor>suoglu.github.io</spirit:vendor>
-  <spirit:library>yigit</spirit:library>
+  <spirit:library>ip</spirit:library>
   <spirit:name>nexysVideo_gpio</spirit:name>
   <spirit:version>1.0</spirit:version>
   <spirit:busInterfaces>
@@ -1048,8 +1048,9 @@
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>user.org:user:nexysVideo_gpio:1.0</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>suoglu.github.io:suoglu:nexysVideo_gpio:1.0</xilinx:canUpgradeFrom>
+        <xilinx:canUpgradeFrom>suoglu.github.io:yigit:nexysVideo_gpio:1.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2021-10-11T20:13:50Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2021-10-11T21:31:34Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@735adc9a_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@6ff0d8b0_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
@@ -1169,6 +1170,13 @@
         <xilinx:tag xilinx:name="ui.data.coregen.df@39922da0_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.df@1d7eba02_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.df@353b92e_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@78dc63ab_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@19c7a220_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@65547bb7_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@592d5471_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@24b642a6_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@14267f30_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@39333b41_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>

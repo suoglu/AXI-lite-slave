@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <spirit:vendor>suoglu.github.io</spirit:vendor>
-  <spirit:library>yigit</spirit:library>
+  <spirit:library>ip</spirit:library>
   <spirit:name>axi_lite_slave</spirit:name>
   <spirit:version>1.0</spirit:version>
   <spirit:busInterfaces>
@@ -991,8 +991,9 @@
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>user.org:user:axi_lite_slave:1.0</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>suoglu.github.io:suoglu:axi_lite_slave:1.0</xilinx:canUpgradeFrom>
+        <xilinx:canUpgradeFrom>suoglu.github.io:yigit:axi_lite_slave:1.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2021-10-11T20:17:23Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2021-10-11T21:29:23Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@420abcb4_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@6743c4f7_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
@@ -1186,6 +1187,13 @@
         <xilinx:tag xilinx:name="ui.data.coregen.df@3c1b6a11_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.df@18654b91_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.df@5dcf1f88_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@459f562c_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@d2cf07f_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7ed0214e_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4e236031_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5b498e85_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@416c964c_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@36d33060_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
