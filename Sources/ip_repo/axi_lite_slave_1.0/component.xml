@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <spirit:vendor>suoglu.github.io</spirit:vendor>
-  <spirit:library>suoglu</spirit:library>
+  <spirit:library>yigit</spirit:library>
   <spirit:name>axi_lite_slave</spirit:name>
   <spirit:version>1.0</spirit:version>
   <spirit:busInterfaces>
@@ -983,14 +983,16 @@
         <xilinx:family xilinx:lifeCycle="Pre-Production">artix7</xilinx:family>
       </xilinx:supportedFamilies>
       <xilinx:taxonomies>
-        <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
+        <xilinx:taxonomy>/AXI_Peripheral</xilinx:taxonomy>
+        <xilinx:taxonomy>/Generic_AXI_Interface</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>AXI4-Lite Slave</xilinx:displayName>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreRevision>1</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>user.org:user:axi_lite_slave:1.0</xilinx:canUpgradeFrom>
+        <xilinx:canUpgradeFrom>suoglu.github.io:suoglu:axi_lite_slave:1.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2021-10-10T22:33:30Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2021-10-11T20:17:23Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@420abcb4_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@6743c4f7_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
@@ -1164,10 +1166,30 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@5af6c861_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@51ac19d2_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@627be240_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@35c37bfc_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@539f4ef_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@36609cc4_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@c309be7_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@57f3f3a7_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@22f50dd8_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@79f6932c_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@53d0f57f_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5f8694d2_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@43a8ac71_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@47c8dc99_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@610079c5_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@688ff28d_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6541751e_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1f34305f_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@35780e38_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@68e77f7e_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3c1b6a11_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@18654b91_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5dcf1f88_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/axi_lite_slave_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2021.1.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7c46a31e"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="c30980da"/>
       <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6398e6ad"/>
