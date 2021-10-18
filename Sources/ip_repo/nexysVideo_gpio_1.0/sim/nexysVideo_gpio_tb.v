@@ -5,7 +5,7 @@
  * ----------------------------------------- *
  * File        : nexysVideo_gpio_tb.v        *
  * Author      : Yigit Suoglu                *
- * Last Edit   : 10/10/2021                  *
+ * Last Edit   : 18/10/2021                  *
  * ----------------------------------------- *
  * Description : Nexy Video GPIO Testbench   *
  *               for simulation              *
@@ -44,7 +44,7 @@ module tb();
   reg [3:0]  s_axi_wstrb;
   reg s_axi_awvalid, s_axi_wvalid, s_axi_bready, s_axi_arvalid, s_axi_rready;
 
-  wire [7:0] sw = 8'h2A;
+  reg [7:0] sw;
   wire [7:0] led;
   reg btnc, btnd, btnr, btnu, btnl;
 
@@ -87,6 +87,7 @@ module tb();
   end
 
   initial begin
+    sw = 8'h2A;
     btnc = 0;
     btnd = 0;
     btnr = 0;
@@ -143,6 +144,50 @@ module tb();
     s_axi_arvalid = 1;
     @(posedge clk); #1;
     s_axi_arvalid = 0;
+    repeat(2) @(posedge clk); #1;
+    step = "Write Response wait";
+    s_axi_bready = 0;
+    s_axi_awaddr = OFFSET_LED;
+    s_axi_awvalid = 1;
+    s_axi_wdata = 7;
+    s_axi_wvalid = 1;
+    @(posedge clk); #1;
+    s_axi_wvalid = 0;
+    s_axi_awvalid = 0;
+    repeat(5) @(posedge clk); #1;
+    s_axi_bready = 1;
+    repeat(2) @(posedge clk); #1;
+    step = "write addr first";
+    s_axi_awvalid = 1;
+    s_axi_wdata = 8;
+    @(posedge clk); #1;
+    s_axi_wdata = 8;
+    s_axi_wvalid = 1;
+    @(posedge clk); #1;
+    s_axi_wvalid = 0;
+    s_axi_awvalid = 0;
+    repeat(5) @(posedge clk); #1;
+    step = "write data first";
+    s_axi_wvalid = 1;
+    s_axi_wdata = 9;
+    @(posedge clk); #1;
+    s_axi_wdata = 10;
+    s_axi_awvalid = 1;
+    @(posedge clk); #1;
+    s_axi_wvalid = 0;
+    s_axi_awvalid = 0;
+    repeat(5) @(posedge clk); #1;
+    step = "Read data not ready";
+    s_axi_rready = 0;
+    s_axi_araddr = OFFSET_SW;
+    s_axi_arvalid = 1;
+    sw = 4'h5;
+    @(posedge clk); #1;
+    s_axi_arvalid = 0;
+    sw = 4'h6;
+    @(posedge clk); #1;
+    sw = 4'h7;
+    s_axi_rready = 1;
     repeat(5) @(posedge clk); #1;
     $finish;
   end

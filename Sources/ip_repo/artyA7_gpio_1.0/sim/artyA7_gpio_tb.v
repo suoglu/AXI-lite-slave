@@ -5,7 +5,7 @@
  * ----------------------------------------- *
  * File        : artyA7_gpio_tb.v            *
  * Author      : Yigit Suoglu                *
- * Last Edit   : 09/10/2021                  *
+ * Last Edit   : 18/10/2021                  *
  * ----------------------------------------- *
  * Description : Arty A7 GPIO Testbench for  *
  *               simulation                  *
@@ -49,7 +49,7 @@ module tb();
   reg [3:0]  s_axi_wstrb;
   reg s_axi_awvalid, s_axi_wvalid, s_axi_bready, s_axi_arvalid, s_axi_rready;
 
-  wire [3:0] sw = 4'hA;
+  reg [3:0] sw;
   reg [3:0] btn;
   wire [3:0] led;
   wire led0_r, led0_g, led0_b, led1_r, led1_g, led1_b, led2_r, led2_g, led2_b, led3_r, led3_g, led3_b;
@@ -102,6 +102,7 @@ module tb();
 
   initial begin
     btn = 0;
+    sw = 4'hA;
     s_axi_wstrb = 4'hF;
     s_axi_awaddr = 32'h0;
     s_axi_wdata = 32'h0;
@@ -197,6 +198,50 @@ module tb();
     s_axi_arvalid = 1;
     @(posedge clk); #1;
     s_axi_arvalid = 0;
+    repeat(2) @(posedge clk); #1;
+    step = "Write Response wait";
+    s_axi_bready = 0;
+    s_axi_awaddr = OFFSET_LED;
+    s_axi_awvalid = 1;
+    s_axi_wdata = 7;
+    s_axi_wvalid = 1;
+    @(posedge clk); #1;
+    s_axi_wvalid = 0;
+    s_axi_awvalid = 0;
+    repeat(5) @(posedge clk); #1;
+    s_axi_bready = 1;
+    repeat(2) @(posedge clk); #1;
+    step = "write addr first";
+    s_axi_awvalid = 1;
+    s_axi_wdata = 8;
+    @(posedge clk); #1;
+    s_axi_wdata = 8;
+    s_axi_wvalid = 1;
+    @(posedge clk); #1;
+    s_axi_wvalid = 0;
+    s_axi_awvalid = 0;
+    repeat(5) @(posedge clk); #1;
+    step = "write data first";
+    s_axi_wvalid = 1;
+    s_axi_wdata = 9;
+    @(posedge clk); #1;
+    s_axi_wdata = 10;
+    s_axi_awvalid = 1;
+    @(posedge clk); #1;
+    s_axi_wvalid = 0;
+    s_axi_awvalid = 0;
+    repeat(5) @(posedge clk); #1;
+    step = "Read data not ready";
+    s_axi_rready = 0;
+    s_axi_araddr = OFFSET_SW;
+    s_axi_arvalid = 1;
+    sw = 4'h5;
+    @(posedge clk); #1;
+    s_axi_arvalid = 0;
+    sw = 4'h6;
+    @(posedge clk); #1;
+    sw = 4'h7;
+    s_axi_rready = 1;
     repeat(5) @(posedge clk); #1;
     $finish;
   end

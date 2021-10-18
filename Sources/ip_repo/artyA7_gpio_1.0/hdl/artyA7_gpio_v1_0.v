@@ -1,17 +1,18 @@
 `timescale 1 ns / 1 ps
 /* ----------------------------------------- *
- * Title       : Arty A7 GPIO v1.0           *
+ * Title       : Arty A7 GPIO v1.1           *
  * Project     : AXI Lite Slave              *
  * ----------------------------------------- *
  * File        : artyA7_gpio_v1_0.v          *
  * Author      : Yigit Suoglu                *
- * Last Edit   : 09/10/2021                  *
+ * Last Edit   : 18/10/2021                  *
  * ----------------------------------------- *
  * Description : AXI Lite interface for      *
  *               Arty A7 GPIO Ports          *
  * ----------------------------------------- *
  * Revisions                                 *
  *     v1      : Inital version              *
+ *     v1.1    : Update axi signalling       *
  * ----------------------------------------- */
 
   module artyA7_gpio_v1_0 #
@@ -92,10 +93,6 @@
 
 
     //AXI Signals
-    //Write Channel handshake (Data & Addr)
-    assign s_axi_awready = write;
-    assign s_axi_wready  = write;
-
     //Write response
     reg s_axi_bvalid_hold, s_axi_bresp_MSB_hold;
     assign s_axi_bvalid = write | s_axi_bvalid_hold;
@@ -113,11 +110,11 @@
       end
     end
 
-     //Read Channel handshake (Addr & data)
-    assign s_axi_arready = ~s_axi_rvalid | s_axi_rready;
+    //Read Channel handshake (Addr & data)
+    reg s_axi_rvalid_hold;
+    assign s_axi_arready = ~s_axi_rvalid_hold;
     assign s_axi_rvalid = s_axi_arvalid | s_axi_rvalid_hold;
     //This will hold read data channel stable until master accepts tx
-    reg s_axi_rvalid_hold;
     always@(posedge s_axi_aclk) begin
       if(~s_axi_aresetn) begin
         s_axi_rvalid_hold <= 0;
@@ -145,6 +142,10 @@
       end
     end
     assign s_axi_rdata = (s_axi_rvalid_hold) ? s_axi_rdata_hold : readReg;
+
+    //Write Channel handshake (Data & Addr)
+    assign s_axi_awready = ~s_axi_bvalid_hold & ~(s_axi_awvalid ^ s_axi_wvalid);
+    assign s_axi_wready  = ~s_axi_bvalid_hold & ~(s_axi_awvalid ^ s_axi_wvalid);
 
     //Handling for strb
     reg [C_S_AXI_DATA_WIDTH-1:0] selected_reg; 

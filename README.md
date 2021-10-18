@@ -70,13 +70,13 @@ Gives access to the basic GPIO ports (seven segment display, buttons, switches a
 
 ### Basys 3 (Synthesized)  Utilization
 
-- Slice LUTs: 146 (as Logic)
+- Slice LUTs: 145 (as Logic)
 - Slice Registers: 168 (as Flip Flop)
 - F7 Muxes: 1
 
 ### Basys 3 Status Information
 
-**Last Simulation:** 06 October 2021, with [Vivado Simulator](https://www.xilinx.com/products/design-tools/vivado/simulator.html).
+**Last Simulation:** 18 October 2021, with [Vivado Simulator](https://www.xilinx.com/products/design-tools/vivado/simulator.html).
 
 **Last Test:** 09 October 2021, on [Digilent Basys 3](https://reference.digilentinc.com/reference/programmable-logic/basys-3/reference-manual).
 
@@ -118,13 +118,13 @@ In combined registers, GPIO with higher number has higher address.
 
 ### Arty A7 (Synthesized) Utilization
 
-- Slice LUTs: 912 (as Logic)
-- Slice Registers: 594 as Flip Flop and 128 as Latch
+- Slice LUTs: 1000 (as Logic)
+- Slice Registers: 714 as Flip Flop and 128 as Latch
 - F7 Muxes: 4
 
 ### Arty A7 Status Information
 
-**Last Simulation:** 09 October 2021, with [Vivado Simulator](https://www.xilinx.com/products/design-tools/vivado/simulator.html).
+**Last Simulation:** 18 October 2021, with [Vivado Simulator](https://www.xilinx.com/products/design-tools/vivado/simulator.html).
 
 **Last Test:** 10 October 2021, on [Digilent Arty A7](https://reference.digilentinc.com/reference/programmable-logic/arty-a7/reference-manual).
 
@@ -179,12 +179,12 @@ This IP provides a simpler interface for AXI4-Lite protocol. IP handles all sign
 - `*_error` signals indicate and error in the operation.
 - Parameter `GP_ADDR_WIDTH` is used to determine the width of `*_addrs` signals.
 
-Write and read channels work independently.
+Write and read channels work independently. Interface passes signals at the same cycle as they are issued, and holds them until the handshake.
 
 ### (Synthesized) Utilization on Artix 7
 
-- Slice LUTs: 22 (as Logic)
-- Slice Registers: 36 (as Flip Flop)
+- Slice LUTs: 49 (as Logic)
+- Slice Registers: 83 (as Flip Flop)
 
 ### Status Information
 

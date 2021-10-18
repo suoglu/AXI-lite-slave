@@ -79,9 +79,6 @@ module tb(
 
 
   axi_lite_slave_v1_0 uut(
-    .clk(clk),
-    .rstn(rstn),
-    .rst(rst),
     .write(write),
     .write_addrs(write_addrs),
     .write_data(write_data),
@@ -126,196 +123,142 @@ module tb(
     write_error = 0;
     write_done = 0;
     read_data = 32'hBABA1195;
+    s_axi_wdata = 32'h12345678;
     s_axi_awaddr = 32'h2204;
     read_error = 0;
     read_done = 0;
     s_axi_awvalid = 0;
-    s_axi_wdata = 32'h12345678;
     s_axi_wstrb = 4'hF;
     s_axi_wvalid = 0;
     s_axi_bready = 0;
     s_axi_araddr = 32'h1195;
     s_axi_arvalid = 0;
     s_axi_rready = 0;
-    repeat(2) @(posedge clk); #1;
+    repeat(2) @(posedge s_axi_aclk); #1;
     step = "Both Ready";
     s_axi_bready = 1;
     s_axi_rready = 1;
     write_done = 1;
     read_done = 1;
-    @(posedge clk); #1;
+    @(posedge s_axi_aclk); #1;
     s_axi_awvalid = 1;
     s_axi_arvalid = 1;
     s_axi_wvalid = 1;
-    @(posedge clk); #1;
+    @(posedge s_axi_aclk); #1;
     s_axi_awvalid = 0;
     s_axi_arvalid = 0;
     s_axi_wvalid = 0;
-    repeat(2) @(posedge clk); #1;
+    repeat(2) @(posedge s_axi_aclk); #1;
     step = "GP Waits 1 cycle";
     write_done = 0;
     read_done = 0;
-    @(posedge clk); #1;
+    read_data = 32'hDEADBEEF;
+    s_axi_wdata = 32'hDEADBEEF;
+    @(posedge s_axi_aclk); #1;
     s_axi_awvalid = 1;
     s_axi_arvalid = 1;
     s_axi_wvalid = 1;
-    @(posedge clk); #1;
+    @(posedge s_axi_aclk); #1;
     write_done = 1;
     read_done = 1;
-    @(posedge clk); #1;
     s_axi_awvalid = 0;
     s_axi_arvalid = 0;
     s_axi_wvalid = 0;
-    write_done = 0;
-    read_done = 0;
-    repeat(2) @(posedge clk); #1;
+    repeat(2) @(posedge s_axi_aclk); #1;
     step = "GP Waits 2 cycles";
     write_done = 0;
     read_done = 0;
-    @(posedge clk); #1;
+    read_data = 32'hE11E;
+    s_axi_wdata = 32'hE11E;
+    @(posedge s_axi_aclk); #1;
     s_axi_awvalid = 1;
     s_axi_arvalid = 1;
     s_axi_wvalid = 1;
-    repeat(2) @(posedge clk); #1;
-    write_done = 1;
-    read_done = 1;
-    @(posedge clk); #1;
+    @(posedge s_axi_aclk); #1;
     s_axi_awvalid = 0;
     s_axi_arvalid = 0;
     s_axi_wvalid = 0;
-    write_done = 0;
-    read_done = 0;
-    repeat(2) @(posedge clk); #1;
-    step = "AXI Waits 1 cycle";
+    @(posedge s_axi_aclk); #1;
     write_done = 1;
     read_done = 1;
-    @(posedge clk); #1;
+    repeat(2) @(posedge s_axi_aclk); #1;
+    step = "AXI Waits 1 cycle";
+    read_data = 32'h12345678;
+    s_axi_wdata = 32'h12345678;
+    @(posedge s_axi_aclk); #1;
     s_axi_awvalid = 1;
     s_axi_arvalid = 1;
     s_axi_wvalid = 1;
     s_axi_bready = 0;
     s_axi_rready = 0;
-    #1
-    fork
-      begin
-        while(read == 1) begin
-          @(posedge clk); #1;
-        end
-        read_done = 0;
-        @(posedge clk); #1;
-        while(s_axi_rready == 0) begin
-          @(posedge clk); #1;
-        end
-        read_done = 1;
-      end
-      begin
-        while(write == 1) begin
-          @(posedge clk); #1;
-        end
-        write_done = 0;
-        @(posedge clk); #1;
-        while(s_axi_bready == 0) begin
-          @(posedge clk); #1;
-        end
-        write_done = 1;
-      end
-      begin
-        @(posedge clk); #1;
-        while(s_axi_awready == 0) begin
-          @(posedge clk); #1;
-        end
-        s_axi_awvalid = 0;
-      end
-      begin
-        @(posedge clk); #1;
-        while(s_axi_arready == 0) begin
-          @(posedge clk);
-        end
-        s_axi_arvalid = 0;
-      end
-      begin
-        @(posedge clk); #1;
-        while(s_axi_wready == 0) begin
-          @(posedge clk); #1;
-        end
-        s_axi_wvalid = 0;
-      end
-      begin
-        @(posedge clk); #1;
-        s_axi_bready = 1;
-        s_axi_rready = 1;
-      end
-    join
-    repeat(2) @(posedge clk); #1;
+    @(posedge s_axi_aclk); #1;
+    s_axi_awvalid = 0;
+    s_axi_arvalid = 0;
+    s_axi_wvalid = 0;
+    s_axi_bready = 1;
+    s_axi_rready = 1;
+    repeat(2) @(posedge s_axi_aclk); #1;
     step = "AXI Waits 2 cycles";
     write_done = 1;
     read_done = 1;
-    @(posedge clk); #1;
+    read_data = 32'h22041195;
+    s_axi_wdata = 32'h22041195;
+    @(posedge s_axi_aclk); #1;
     s_axi_awvalid = 1;
     s_axi_arvalid = 1;
     s_axi_wvalid = 1;
     s_axi_bready = 0;
     s_axi_rready = 0;
-    #1
-    fork
-      begin
-        while(read == 1) begin
-          @(posedge clk); #1;
-        end
-        read_done = 0;
-        @(posedge clk); #1;
-        while(s_axi_rready == 0) begin
-          @(posedge clk); #1;
-        end
-        read_done = 1;
-      end
-      begin
-        while(write == 1) begin
-          @(posedge clk); #1;
-        end
-        write_done = 0;
-        @(posedge clk); #1;
-        while(s_axi_bready == 0) begin
-          @(posedge clk); #1;
-        end
-        write_done = 1;
-      end
-      begin
-        @(posedge clk); #1;
-        while(s_axi_awready == 0) begin
-          @(posedge clk); #1;
-        end
-        s_axi_awvalid = 0;
-        @(posedge clk); #1;
-        s_axi_awvalid = 1;
-        @(posedge clk); #1;
-        s_axi_awvalid = 0;
-      end
-      begin
-        @(posedge clk); #1;
-        while(s_axi_arready == 0) begin
-          @(posedge clk);
-        end
-        s_axi_arvalid = 0;
-      end
-      begin
-        @(posedge clk); #1;
-        while(s_axi_wready == 0) begin
-          @(posedge clk); #1;
-        end
-        s_axi_wvalid = 0;
-        @(posedge clk); #1;
-        s_axi_wvalid = 1;
-        @(posedge clk); #1;
-        s_axi_wvalid = 0;
-      end
-      begin
-        repeat(2) @(posedge clk); #1;
-        s_axi_bready = 1;
-        s_axi_rready = 1;
-      end
-    join
-    repeat(5) @(posedge clk); #1;
+    @(posedge s_axi_aclk); #1;
+    s_axi_awvalid = 0;
+    s_axi_arvalid = 0;
+    s_axi_wvalid = 0;
+    @(posedge s_axi_aclk); #1;
+    s_axi_bready = 1;
+    s_axi_rready = 1;repeat(2) @(posedge s_axi_aclk); #1;
+    step = "GP Waits Data ch";
+    write_done = 0;
+    read_done = 0;
+    read_data = 32'h0;
+    s_axi_wdata = 32'hE11E;
+    @(posedge s_axi_aclk); #1;
+    s_axi_awvalid = 1;
+    s_axi_arvalid = 1;
+    s_axi_wvalid = 1;
+    @(posedge s_axi_aclk); #1;
+    s_axi_awvalid = 0;
+    s_axi_arvalid = 0;
+    s_axi_wvalid = 0;
+    s_axi_wdata = 32'h0;
+    s_axi_araddr = 32'h0;
+    @(posedge s_axi_aclk); #1;
+    read_data = 32'hE11E;
+    write_done = 1;
+    read_done = 1;
+    repeat(2) @(posedge s_axi_aclk); #1;
+    step = "AXI Waits Data ch";
+    write_done = 1;
+    read_done = 1;
+    read_data = 32'h22041195;
+    s_axi_wdata = 32'h22041195;
+    s_axi_araddr = 32'h3443;
+    @(posedge s_axi_aclk); #1;
+    s_axi_awvalid = 1;
+    s_axi_arvalid = 1;
+    s_axi_wvalid = 1;
+    s_axi_bready = 0;
+    s_axi_rready = 0;
+    @(posedge s_axi_aclk); #1;
+    s_axi_awvalid = 0;
+    s_axi_arvalid = 0;
+    s_axi_wvalid = 0;
+    read_data = 32'h0;
+    s_axi_wdata = 32'h0;
+    s_axi_araddr = 32'h0;
+    @(posedge s_axi_aclk); #1;
+    s_axi_bready = 1;
+    s_axi_rready = 1;
+    repeat(5) @(posedge s_axi_aclk); #1;
     $finish;
   end
   

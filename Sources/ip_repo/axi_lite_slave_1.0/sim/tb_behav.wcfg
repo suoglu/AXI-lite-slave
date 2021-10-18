@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="174481fs"></ZoomStartTime>
-      <ZoomEndTime time="260304fs"></ZoomEndTime>
-      <Cursor1Time time="246000fs"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="154.152 ns"></ZoomEndTime>
+      <Cursor1Time time="32.648 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="360"></NameColumnWidth>
-      <ValueColumnWidth column_width="168"></ValueColumnWidth>
+      <ValueColumnWidth column_width="164"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="14" />
+   <WVObjectSize size="16" />
    <wvobject type="array" fp_name="/tb/step">
       <obj_property name="ElementShortName">step[160:0]</obj_property>
       <obj_property name="ObjectShortName">step[160:0]</obj_property>
@@ -34,28 +34,6 @@
    <wvobject type="logic" fp_name="/tb/s_axi_aresetn">
       <obj_property name="ElementShortName">s_axi_aresetn</obj_property>
       <obj_property name="ObjectShortName">s_axi_aresetn</obj_property>
-   </wvobject>
-   <wvobject type="group" fp_name="group40">
-      <obj_property name="label">Passthrough system sig</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject type="logic" fp_name="/tb/clk">
-         <obj_property name="ElementShortName">clk</obj_property>
-         <obj_property name="ObjectShortName">clk</obj_property>
-         <obj_property name="CustomSignalColor">#808080</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="/tb/rstn">
-         <obj_property name="ElementShortName">rstn</obj_property>
-         <obj_property name="ObjectShortName">rstn</obj_property>
-         <obj_property name="CustomSignalColor">#808080</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-      </wvobject>
-      <wvobject type="logic" fp_name="/tb/rst">
-         <obj_property name="ElementShortName">rst</obj_property>
-         <obj_property name="ObjectShortName">rst</obj_property>
-         <obj_property name="CustomSignalColor">#808080</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-      </wvobject>
    </wvobject>
    <wvobject type="group" fp_name="group41">
       <obj_property name="label">GP Write</obj_property>
@@ -268,12 +246,24 @@
       <obj_property name="label">UUT</obj_property>
       <obj_property name="DisplayName">label</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/tb/uut/read_keep">
-      <obj_property name="ElementShortName">read_keep</obj_property>
-      <obj_property name="ObjectShortName">read_keep</obj_property>
+   <wvobject type="logic" fp_name="/tb/uut/got_write_data">
+      <obj_property name="ElementShortName">got_write_data</obj_property>
+      <obj_property name="ObjectShortName">got_write_data</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/tb/uut/write_response_keep">
-      <obj_property name="ElementShortName">write_response_keep</obj_property>
-      <obj_property name="ObjectShortName">write_response_keep</obj_property>
+   <wvobject type="logic" fp_name="/tb/uut/got_write_addrs">
+      <obj_property name="ElementShortName">got_write_addrs</obj_property>
+      <obj_property name="ObjectShortName">got_write_addrs</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/uut/got_read_addrs">
+      <obj_property name="ElementShortName">got_read_addrs</obj_property>
+      <obj_property name="ObjectShortName">got_read_addrs</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/uut/hold_read_resp">
+      <obj_property name="ElementShortName">hold_read_resp</obj_property>
+      <obj_property name="ObjectShortName">hold_read_resp</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/uut/hold_write_resp">
+      <obj_property name="ElementShortName">hold_write_resp</obj_property>
+      <obj_property name="ObjectShortName">hold_write_resp</obj_property>
    </wvobject>
 </wave_config>
