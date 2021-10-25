@@ -266,7 +266,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>798fe71d</spirit:value>
+            <spirit:value>8f2ac91c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -282,7 +282,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>798fe71d</spirit:value>
+            <spirit:value>8f2ac91c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -856,11 +856,13 @@
       <spirit:file>
         <spirit:name>src/btn_debouncer.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/nexysVideo_gpio_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_cea277c2</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_380759c3</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -868,10 +870,12 @@
       <spirit:file>
         <spirit:name>src/btn_debouncer.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/nexysVideo_gpio_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -898,6 +902,7 @@
       <spirit:file>
         <spirit:name>drivers/nexysVideo_gpio_v1_0/src/nexysVideo_gpio.cpp</spirit:name>
         <spirit:fileType>cppSource</spirit:fileType>
+        <spirit:userFileType>driver_src</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -923,6 +928,7 @@
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
         <spirit:userFileType>USED_IN_testbench</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>sim/tb_behav.wcfg</spirit:name>
@@ -932,7 +938,7 @@
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
-  <spirit:description>AXI-lite interface for GPIO of Nexys Video GPIO</spirit:description>
+  <spirit:description>AXI-lite interface for GPIO of Nexys Video</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>C_S_AXI_DATA_WIDTH</spirit:name>
@@ -1044,13 +1050,13 @@
         <xilinx:taxonomy>/FPGA_GPIO</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>Nexys Video GPIO</xilinx:displayName>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreRevision>3</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>user.org:user:nexysVideo_gpio:1.0</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>suoglu.github.io:suoglu:nexysVideo_gpio:1.0</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>suoglu.github.io:yigit:nexysVideo_gpio:1.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2021-10-18T18:28:19Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2021-10-25T19:57:25Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@735adc9a_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@6ff0d8b0_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
@@ -1207,13 +1213,37 @@
         <xilinx:tag xilinx:name="ui.data.coregen.df@2f01559f_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.df@3a6367dd_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.df@18e43119_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@170960de_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@90658b5_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5b7219d_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6c8bc988_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@77581ac3_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5ab8fa00_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3372a22c_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5e9874de_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5602c483_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@262640a8_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@66f16cf3_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@bc07163_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1177cf54_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@688b3884_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@78864563_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@8ce9795_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@22f09209_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@e0362d8_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@47411f3d_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3bca5238_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@79c130ed_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@75de45ba_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@fa6de12_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@55ccddcf_ARCHIVE_LOCATION">/home/suoglu/Projects/Personal/axi-lite-slave/Sources/ip_repo/nexysVideo_gpio_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2021.1.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="150f18b5"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="c30980da"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="81f42fe7"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="956a59e9"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="51ef2b2d"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="6fdb6948"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="73bea385"/>
