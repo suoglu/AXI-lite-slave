@@ -10,7 +10,7 @@ INCLUDEDIR=../../../include
 INCLUDES=-I./. -I${INCLUDEDIR}
 
 INCLUDEFILES=*.h
-LIBSOURCES=*.c
+LIBSOURCES=*.cpp
 OUTS = *.o
 
 libs:
