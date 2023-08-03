@@ -6,6 +6,7 @@
  * File        : axi_lite_slave_v1_0.v       *
  * Author      : Yigit Suoglu                *
  * Last Edit   : 18/10/2021                  *
+ * Licence     : CERN-OHL-W                  *
  * ----------------------------------------- *
  * Description : AXI Lite slave interface    *
  * ----------------------------------------- *

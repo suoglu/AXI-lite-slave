@@ -6,6 +6,7 @@
  * File        : nexysVideo_gpio_v1_0.v      *
  * Author      : Yigit Suoglu                *
  * Last Edit   : 18/10/2021                  *
+ * Licence     : CERN-OHL-W                  *
  * ----------------------------------------- *
  * Description : AXI Lite interface for      *
  *               Nexy Video GPIO Ports       *
