@@ -23,6 +23,7 @@
    1. Description
    2. Utilization
    3. Status Information
+4. Licence
 
 [![Repo on GitLab](https://img.shields.io/badge/repo-GitLab-6C488A.svg)](https://gitlab.com/suoglu/axi-lite-slave)
 [![Repo on GitHub](https://img.shields.io/badge/repo-GitHub-3D76C2.svg)](https://github.com/suoglu/AXI-lite-slave)
@@ -189,3 +190,7 @@ Write and read channels work independently. Interface passes signals at the same
 ### Status Information
 
 **Last Simulation:** 10 October 2021, with [Vivado Simulator](https://www.xilinx.com/products/design-tools/vivado/simulator.html).
+
+## Licence
+
+CERN Open Hardware Licence Version 2 - Weakly Reciprocal
